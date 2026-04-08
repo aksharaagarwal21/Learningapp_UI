@@ -2,6 +2,14 @@
 
 A modern, production-grade frontend for a skill assessment and learning platform built with **React 19**, **TypeScript**, **Vite**, **Framer Motion**, and **Recharts**.
 
+## 👩‍💻 Developer
+
+**Akshara Kumari** — Full Stack Developer
+
+- 🔗 GitHub: [aksharaagarwal21](https://github.com/aksharaagarwal21)
+- 🔗 LinkedIn: [Akshara Kumari](https://www.linkedin.com/in/akshara-kumari-bb38b535b)
+- 📂 Repository: [Learningapp_UI](https://github.com/aksharaagarwal21/Learningapp_UI)
+
 ## Pages
 
 | Page | Route | Description |

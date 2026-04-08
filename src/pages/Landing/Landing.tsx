@@ -482,6 +482,13 @@ export default function Landing() {
           </div>
           <div className="landing-footer__bottom">
             <p>© 2026 SkillForge. All rights reserved.</p>
+            <p className="landing-footer__credit">
+              Made by <strong>Akshara Kumari</strong> — Full Stack Developer
+              <span className="landing-footer__credit-links">
+                <a href="https://github.com/aksharaagarwal21" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/akshara-kumari-bb38b535b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </span>
+            </p>
           </div>
         </div>
       </footer>

@@ -653,6 +653,33 @@
   color: var(--text-tertiary);
 }
 
+.landing-footer__credit {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+.landing-footer__credit strong {
+  color: var(--indigo-500);
+  font-weight: 700;
+}
+
+.landing-footer__credit-links {
+  display: inline-flex;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+.landing-footer__credit-links a {
+  color: var(--indigo-500);
+  font-weight: 600;
+  transition: opacity var(--transition-fast);
+}
+
+.landing-footer__credit-links a:hover {
+  opacity: 0.8;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero__inner {
