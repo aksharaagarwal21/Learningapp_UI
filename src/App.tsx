@@ -28,8 +28,6 @@ import AssessmentDetail from './pages/Assessment/AssessmentDetail';
 import AssessmentTake from './pages/Assessment/AssessmentTake';
 import AssessmentResults from './pages/Assessment/AssessmentResults';
 
-// Recruiter Pages
-import RecruiterDashboard from './pages/Recruiter/RecruiterDashboard';
 
 // Instructor Pages
 import InstructorDashboard from './pages/Instructor/InstructorDashboard';
@@ -74,12 +72,6 @@ export default function App() {
           <Route path="/assessment/:assessmentId" element={<AssessmentDetail />} />
           <Route path="/assessment/:assessmentId/take" element={<AssessmentTake />} />
           <Route path="/assessment/:assessmentId/results" element={<AssessmentResults />} />
-
-          {/* Recruiter */}
-          <Route path="/recruiter/dashboard" element={<RecruiterDashboard />} />
-          <Route path="/recruiter/jobs" element={<RecruiterDashboard />} />
-          <Route path="/recruiter/candidates" element={<RecruiterDashboard />} />
-          <Route path="/recruiter/assessments" element={<RecruiterDashboard />} />
 
           {/* Instructor */}
           <Route path="/instructor/dashboard" element={<InstructorDashboard />} />

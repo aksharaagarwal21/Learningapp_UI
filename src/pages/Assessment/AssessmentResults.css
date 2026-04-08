@@ -55,6 +55,15 @@
 .results-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
 @media (max-width: 768px) {
-  .results-score-card { flex-direction: column; text-align: center; }
-  .results-score-card__details { grid-template-columns: 1fr 1fr; }
+  .results-page { overflow-x: hidden; }
+  .results-hero { padding: 24px; }
+  .results-hero h1 { font-size: 22px; }
+  .results-hero p { font-size: 13px; }
+  .results-score-card { flex-direction: column; text-align: center; gap: 20px; }
+  .results-score-card__details { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .results-score-card__stat strong { font-size: 20px; }
+  .results-review__item-header { flex-wrap: wrap; gap: 6px; }
+  .results-review__item-text { font-size: 13px; }
+  .results-actions { flex-direction: column; }
+  .results-actions .btn { width: 100%; justify-content: center; }
 }

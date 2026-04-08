@@ -52,6 +52,18 @@
   .ad-grid { grid-template-columns: 1fr; }
   .ad-start-card { position: static; }
 }
+
 @media (max-width: 768px) {
+  .assessment-detail { overflow-x: hidden; }
+  .ad-hero { padding: 24px; }
+  .ad-hero__icon { font-size: 40px; }
+  .ad-hero h1 { font-size: 20px; }
+  .ad-hero p { font-size: 13px; }
   .ad-rules-grid { grid-template-columns: 1fr; }
+  .ad-rule { gap: 10px; }
+  .ad-topics { gap: 6px; }
+  .ad-topic { font-size: 12px; padding: 4px 10px; }
+  .ad-start-card__stats { grid-template-columns: 1fr 1fr 1fr; gap: 4px; }
+  .ad-start-card__stats div strong { font-size: 14px; }
+  .ad-start-card__diff { flex-wrap: wrap; }
 }

@@ -103,7 +103,16 @@
   .cd-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .cd-hero { flex-direction: column; padding: 28px 20px; }
-  .cd-hero h1 { font-size: 24px; }
+  .course-detail { overflow-x: hidden; }
+  .cd-hero { flex-direction: column; padding: 20px 16px; }
+  .cd-hero h1 { font-size: 20px; }
+  .cd-hero__meta { gap: 10px; font-size: 12px; }
+  .cd-hero__actions { flex-direction: column; }
+  .cd-hero__actions .btn { width: 100%; justify-content: center; }
   .cd-learn-grid { grid-template-columns: 1fr; }
+  .cd-lesson { padding: 10px 8px; }
+  .cd-lesson__left { gap: 10px; }
+  .cd-lesson__title { font-size: 13px; }
+  .cd-section h2 { font-size: 16px; }
+  .cd-module__header { flex-direction: column; align-items: flex-start; gap: 4px; }
 }

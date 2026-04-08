@@ -86,8 +86,25 @@
 .at-modal__actions { display: flex; gap: 10px; margin-top: 20px; }
 
 @media (max-width: 768px) {
+  .assessment-take { overflow-x: hidden; }
   .at-nav { display: none; }
-  .at-question { padding: 20px; }
-  .at-topbar { padding: 12px 16px; }
+  .at-question { padding: 16px; }
+  .at-topbar { padding: 10px 12px; }
+  .at-topbar h2 { font-size: 13px; white-space: normal; }
+  .at-topbar__icon { font-size: 18px; }
+  .at-topbar__left { gap: 6px; }
+  .at-topbar__right { gap: 8px; }
+  .at-topbar__count { font-size: 11px; }
+  .at-timer { font-size: 14px; padding: 6px 12px; }
   .at-options--tf { flex-direction: column; }
+  .at-question__text { font-size: 16px; }
+  .at-question__header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .at-question__nav { gap: 8px; }
+  .at-question__nav .btn { font-size: 13px; padding: 8px 12px; }
+  .cl-quiz-option { padding: 10px 12px; font-size: 13px; }
+  .cl-quiz-option__letter { width: 24px; height: 24px; font-size: 11px; }
+  .at-modal { padding: 24px; }
+  .at-modal h3 { font-size: 18px; }
+  .at-modal__actions { flex-direction: column; }
+  .at-modal__actions .btn { width: 100%; }
 }

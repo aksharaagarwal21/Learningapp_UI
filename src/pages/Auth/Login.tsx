@@ -21,12 +21,11 @@ export default function Login() {
     navigate('/dashboard');
   };
 
-  const quickLogin = (role: 'learner' | 'recruiter' | 'instructor') => {
+  const quickLogin = (role: 'learner' | 'instructor') => {
     setRole(role);
     login('demo@skillforge.com', 'demo');
     const routes = {
       learner: '/dashboard',
-      recruiter: '/recruiter/dashboard',
       instructor: '/instructor/dashboard',
     };
     navigate(routes[role]);
@@ -86,7 +85,6 @@ export default function Login() {
             <p className="auth-quick-login__label">Quick demo login:</p>
             <div className="auth-quick-login__btns">
               <button className="btn btn-sm btn-secondary" onClick={() => quickLogin('learner')}>🎓 Learner</button>
-              <button className="btn btn-sm btn-secondary" onClick={() => quickLogin('recruiter')}>🏢 Recruiter</button>
               <button className="btn btn-sm btn-secondary" onClick={() => quickLogin('instructor')}>🧑‍🏫 Instructor</button>
             </div>
           </div>

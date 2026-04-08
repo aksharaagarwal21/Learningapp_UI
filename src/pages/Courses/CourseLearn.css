@@ -176,12 +176,26 @@
 }
 
 @media (max-width: 768px) {
+  .course-learn { margin: -12px; }
   .cl-sidebar {
     position: fixed; left: 0; top: 0; bottom: 0; z-index: 200;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg); width: 280px;
   }
-  .cl-sidebar:not(.cl-sidebar--open) { margin-left: -320px; }
-  .cl-content { padding: 20px; }
-  .cl-topbar { padding: 12px 16px; }
-  .cl-topbar h2 { font-size: 14px; }
+  .cl-sidebar:not(.cl-sidebar--open) { margin-left: -280px; }
+  .cl-content { padding: 16px; }
+  .cl-topbar { padding: 10px 12px; }
+  .cl-topbar h2 { font-size: 13px; white-space: normal; }
+  .cl-topbar__nav { gap: 4px; }
+  .cl-topbar__nav .btn { padding: 6px 10px; font-size: 12px; }
+  .cl-video-placeholder { border-radius: var(--radius-lg); }
+  .cl-code-textarea { min-height: 200px; font-size: 12px; padding: 12px; }
+  .cl-code-editor__header { padding: 8px 12px; font-size: 12px; }
+  .cl-quiz-option { padding: 10px 12px; font-size: 13px; gap: 10px; }
+  .cl-quiz-option__letter { width: 24px; height: 24px; font-size: 11px; }
+  .cl-quiz-lesson h3 { font-size: 17px; }
+  .cl-code-lesson h3 { font-size: 17px; }
+  .cl-reading-body h1 { font-size: 20px; }
+  .cl-reading-body h2 { font-size: 17px; }
+  .cl-bottom-nav { padding: 16px 0; margin-top: 20px; }
+  .cl-bottom-nav .btn { font-size: 12px; padding: 8px 12px; }
 }

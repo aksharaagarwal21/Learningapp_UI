@@ -220,7 +220,17 @@
   font-size: 14px;
 }
 
+@media (max-width: 1024px) {
+  .sa-ongoing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  .skill-assessment { overflow-x: hidden; }
+  
+  .sa-section__title { font-size: 18px; }
+
   .sa-ongoing-grid {
     grid-template-columns: 1fr;
   }
@@ -232,9 +242,37 @@
 
   .sa-search {
     min-width: unset;
+    width: 100%;
+  }
+
+  .sa-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  .sa-filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .sa-grid {
     grid-template-columns: 1fr;
   }
+
+  .sa-card { padding: 16px; }
+  .sa-card__title { font-size: 16px; }
+  .sa-card__icon { font-size: 28px; }
+
+  .sa-card__footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .sa-card__footer .btn { width: 100%; justify-content: center; }
+
+  .sa-ongoing-card { padding: 16px; }
+  .sa-ongoing-card__icon { font-size: 24px; }
 }

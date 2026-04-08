@@ -4,7 +4,7 @@ import { useAuth } from '../../contexts/AuthContext';
 import {
   LayoutDashboard, Target, Award, Trophy, User, BookOpen,
   Code2, Bell, Settings, LogOut, ChevronLeft, ChevronRight,
-  Briefcase, Users, BarChart3, PlusCircle, GraduationCap,
+  BarChart3, PlusCircle, GraduationCap,
   Zap
 } from 'lucide-react';
 import { useState } from 'react';
@@ -20,12 +20,7 @@ const learnerLinks = [
   { to: '/profile', icon: User, label: 'Profile' },
 ];
 
-const recruiterLinks = [
-  { to: '/recruiter/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/recruiter/jobs', icon: Briefcase, label: 'Job Posts' },
-  { to: '/recruiter/candidates', icon: Users, label: 'Candidates' },
-  { to: '/recruiter/assessments', icon: Target, label: 'Assessments' },
-];
+const recruiterLinks = learnerLinks; // Recruiter removed — fallback to learner
 
 const instructorLinks = [
   { to: '/instructor/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
@@ -46,9 +41,7 @@ export default function Sidebar() {
       ? instructorLinks 
       : learnerLinks;
 
-  const roleIcon = user.role === 'recruiter' 
-    ? Briefcase 
-    : user.role === 'instructor' 
+  const roleIcon = user.role === 'instructor' 
       ? GraduationCap 
       : Zap;
 

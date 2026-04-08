@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../../contexts/AuthContext';
 import type { UserRole } from '../../contexts/AuthContext';
-import { Mail, Lock, Eye, EyeOff, Zap, ArrowRight, GitBranch, User, GraduationCap, Briefcase, BookOpen } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, Zap, ArrowRight, GitBranch, User, GraduationCap, BookOpen } from 'lucide-react';
 import ParticleBackground from '../../components/ui/ParticleBackground';
 import './Auth.css';
 
@@ -15,14 +15,6 @@ const roles = [
     title: 'Learner',
     description: 'Take assessments, earn certificates, and climb leaderboards',
     color: '#6366F1',
-  },
-  {
-    id: 'recruiter' as UserRole,
-    icon: Briefcase,
-    emoji: '🏢',
-    title: 'Recruiter',
-    description: 'Post jobs, assess candidates, and find top talent',
-    color: '#10B981',
   },
   {
     id: 'instructor' as UserRole,
@@ -54,9 +46,8 @@ export default function Signup() {
     e.preventDefault();
     if (!selectedRole) return;
     signup(name, email, password, selectedRole);
-    const routes = {
+    const routes: Record<string, string> = {
       learner: '/dashboard',
-      recruiter: '/recruiter/dashboard',
       instructor: '/instructor/dashboard',
     };
     navigate(routes[selectedRole]);

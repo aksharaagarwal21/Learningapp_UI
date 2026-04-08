@@ -380,3 +380,16 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .auth-page__form-wrapper { padding: 16px; }
+  .auth-form__header h1 { font-size: 20px; }
+  .auth-quick-login__btns { flex-direction: column; }
+  .auth-quick-login__btns .btn { width: 100%; justify-content: center; }
+  .auth-role-card { padding: 14px; gap: 12px; }
+  .auth-role-card__icon { width: 40px; height: 40px; }
+  .auth-role-card__title { font-size: 14px; }
+  .auth-social { grid-template-columns: 1fr; }
+  .auth-progress { gap: 16px; }
+  .auth-progress__step span { font-size: 11px; }
+}

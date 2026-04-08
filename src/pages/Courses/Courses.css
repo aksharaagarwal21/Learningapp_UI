@@ -161,7 +161,14 @@
 }
 
 @media (max-width: 768px) {
+  .courses-page { overflow-x: hidden; }
   .courses-grid {
     grid-template-columns: 1fr;
   }
+  .courses-toolbar { flex-direction: column; align-items: stretch; }
+  .courses-search { min-width: unset; width: 100%; }
+  .courses-filters { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+  .courses-filter-btn { white-space: nowrap; flex-shrink: 0; }
+  .course-card { padding: 16px; }
+  .course-card__title { font-size: 15px; }
 }

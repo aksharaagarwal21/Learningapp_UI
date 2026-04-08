@@ -419,17 +419,56 @@
 }
 
 @media (max-width: 768px) {
+  .dashboard { overflow-x: hidden; }
+  
   .dashboard__greeting {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 8px;
   }
+
+  .dashboard__greeting h1 { font-size: 20px; }
 
   .dashboard__stats {
     grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
+
+  .stat-card { padding: 14px; gap: 10px; }
+  .stat-card__value { font-size: 18px; }
+  .stat-card__icon { width: 36px; height: 36px; }
+
+  .dashboard__section { padding: 16px; }
+  .dashboard__section-header { margin-bottom: 14px; }
+  .dashboard__section-header h2 { font-size: 14px; }
 
   .assessment-cards {
     grid-template-columns: 1fr;
   }
+
+  .assessment-mini-card { padding: 12px; }
+  .assessment-mini-card__icon { font-size: 22px; }
+
+  .heatmap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .heatmap__cell { width: 10px; height: 10px; }
+
+  .quick-actions-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .quick-action-card { padding: 14px; font-size: 12px; }
+  .quick-action-card__icon { width: 38px; height: 38px; }
+
+  .recommended-item { padding: 10px; gap: 10px; }
+  .recommended-item__icon { font-size: 22px; }
+  .recommended-item__title { font-size: 13px; }
+
+  .deadline-item { padding: 10px; gap: 10px; }
+  .deadline-item__title { font-size: 13px; }
+}
+
+@media (max-width: 400px) {
+  .dashboard__stats { grid-template-columns: 1fr; }
+  .quick-actions-grid { grid-template-columns: 1fr; }
 }

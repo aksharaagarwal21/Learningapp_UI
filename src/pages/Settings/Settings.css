@@ -48,3 +48,10 @@
 }
 
 .settings-row--danger .settings-row__info h4 { color: var(--rose-500); }
+
+@media (max-width: 768px) {
+  .settings-page h1 { font-size: 20px; }
+  .settings-row { flex-wrap: wrap; padding: 12px 0; }
+  .settings-theme-picker { flex-wrap: wrap; }
+  .settings-theme-btn { padding: 6px 12px; font-size: 12px; }
+}

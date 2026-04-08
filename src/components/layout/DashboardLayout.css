@@ -1,6 +1,7 @@
 .dashboard-layout {
   display: flex;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .dashboard-layout__main {
@@ -10,21 +11,25 @@
   flex-direction: column;
   min-height: 100vh;
   transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .dashboard-layout__content {
   flex: 1;
-  padding: 32px;
+  padding: 24px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
   .dashboard-layout__main {
     margin-left: 0;
+    width: 100vw;
   }
 
   .dashboard-layout__content {
-    padding: 16px;
+    padding: 12px;
     padding-bottom: 80px;
   }
 }
