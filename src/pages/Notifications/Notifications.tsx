@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Bell, Award, Trophy, Target, Settings, Check, Clock } from 'lucide-react';
+import { Award, Trophy, Target, Settings, Check, Clock } from 'lucide-react';
 import './Notifications.css';
 
 const notifications = [

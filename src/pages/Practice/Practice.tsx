@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Play, Clock, Flame, CheckCircle, ChevronRight, Zap } from 'lucide-react';
 import './Practice.css';

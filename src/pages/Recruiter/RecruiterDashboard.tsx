@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Users, CheckCircle, Clock, TrendingUp, Plus, Search, Filter, Eye, MessageSquare, XCircle } from 'lucide-react';
+import { Briefcase, Users, CheckCircle, Clock, TrendingUp, Plus, Search, Eye, MessageSquare } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import './RecruiterDashboard.css';
 

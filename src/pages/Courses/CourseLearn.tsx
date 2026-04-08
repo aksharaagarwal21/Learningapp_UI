@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { useParams, useSearchParams, Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getCourseById } from '../../data/courseData';
 import type { Lesson } from '../../data/courseData';
@@ -14,7 +14,7 @@ const typeIcons: Record<string, typeof Video> = { video: Video, reading: FileTex
 export default function CourseLearn() {
   const { courseId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
-  const navigate = useNavigate();
+
   const course = getCourseById(courseId || '');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [codeValue, setCodeValue] = useState('');

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Award, Download, Share2, Eye, Filter, Calendar } from 'lucide-react';
+import { Award, Download, Share2, Eye, Calendar } from 'lucide-react';
 import './Certificates.css';
 
 const filters = ['All', 'Frontend', 'Backend', 'DevOps'];

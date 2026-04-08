@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, Medal, Crown, TrendingUp, ChevronUp, Filter } from 'lucide-react';
+import { Trophy, Medal, Crown, ChevronUp } from 'lucide-react';
 import './Leaderboard.css';
 
 const timeFilters = ['Weekly', 'Monthly', 'All-Time'];

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { PlusCircle, Target, Users, TrendingUp, DollarSign, Star, BarChart3 } from 'lucide-react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import { Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import { Link } from 'react-router-dom';
 import './InstructorDashboard.css';
 
