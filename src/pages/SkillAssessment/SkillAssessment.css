@@ -1,0 +1,240 @@
+/* Skill Assessment Page */
+.skill-assessment {
+  max-width: 1200px;
+}
+
+.sa-section {
+  margin-bottom: 40px;
+}
+
+.sa-section__title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+/* Ongoing Cards */
+.sa-ongoing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.sa-ongoing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.sa-ongoing-card:hover {
+  border-color: var(--border-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.sa-ongoing-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.sa-ongoing-card__icon {
+  font-size: 32px;
+}
+
+.sa-ongoing-card__info {
+  text-align: left;
+}
+
+.sa-ongoing-card__info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sa-ongoing-card__meta {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+/* Toolbar */
+.sa-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.sa-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-full);
+  min-width: 280px;
+  color: var(--text-tertiary);
+}
+
+.sa-search:focus-within {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.08);
+}
+
+.sa-search input {
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.sa-search input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.sa-filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.sa-filter-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-secondary);
+  transition: all var(--transition-fast);
+  background: var(--bg-card);
+}
+
+.sa-filter-btn:hover {
+  border-color: var(--border-primary);
+  color: var(--text-primary);
+}
+
+.sa-filter-btn--active {
+  background: var(--gradient-primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Assessment Grid */
+.sa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.sa-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.sa-card:hover {
+  border-color: var(--border-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.sa-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sa-card__icon {
+  font-size: 36px;
+}
+
+.sa-card__difficulty {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.sa-card__difficulty--beginner {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--emerald-500);
+}
+
+.sa-card__difficulty--intermediate {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--amber-600);
+}
+
+.sa-card__difficulty--advanced {
+  background: rgba(244, 63, 94, 0.1);
+  color: var(--rose-500);
+}
+
+.sa-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sa-card__desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.sa-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.sa-empty {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-tertiary);
+}
+
+.sa-empty h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin: 16px 0 8px;
+}
+
+.sa-empty p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .sa-ongoing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sa-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sa-search {
+    min-width: unset;
+  }
+
+  .sa-grid {
+    grid-template-columns: 1fr;
+  }
+}

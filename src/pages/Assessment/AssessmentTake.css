@@ -1,0 +1,93 @@
+.assessment-take { margin: -24px; display: flex; flex-direction: column; min-height: calc(100vh - 60px); }
+
+/* Top Bar */
+.at-topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px; background: var(--bg-card);
+  border-bottom: 1px solid var(--border-secondary); gap: 16px; flex-wrap: wrap;
+}
+.at-topbar__left { display: flex; align-items: center; gap: 10px; }
+.at-topbar__icon { font-size: 24px; }
+.at-topbar h2 { font-size: 16px; font-weight: 700; }
+.at-topbar__count { font-size: 13px; color: var(--text-tertiary); font-weight: 500; }
+.at-topbar__right { display: flex; align-items: center; gap: 12px; }
+
+.at-timer {
+  display: flex; align-items: center; gap: 6px; padding: 8px 16px;
+  background: rgba(99, 102, 241, 0.08); border-radius: var(--radius-full);
+  font-size: 18px; font-weight: 800; color: var(--indigo-500);
+  font-variant-numeric: tabular-nums;
+}
+.at-timer--warning { background: rgba(244, 63, 94, 0.08); color: var(--rose-500); }
+
+/* Body */
+.at-body { display: flex; flex: 1; }
+
+/* Nav */
+.at-nav {
+  width: 220px; padding: 20px; background: var(--bg-card);
+  border-right: 1px solid var(--border-secondary); flex-shrink: 0;
+}
+.at-nav h4 { font-size: 13px; font-weight: 700; color: var(--text-tertiary); text-transform: uppercase; margin-bottom: 14px; }
+.at-nav__grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+
+.at-nav__btn {
+  width: 36px; height: 36px; border-radius: var(--radius-md);
+  border: 2px solid var(--border-secondary); display: flex; align-items: center;
+  justify-content: center; font-size: 13px; font-weight: 600; cursor: pointer;
+  transition: all var(--transition-fast); background: var(--bg-card);
+  color: var(--text-secondary);
+}
+.at-nav__btn:hover { border-color: var(--border-primary); }
+.at-nav__btn--active { border-color: var(--indigo-500); color: var(--indigo-500); }
+.at-nav__btn--answered { background: var(--indigo-500); color: #fff; border-color: var(--indigo-500); }
+.at-nav__btn--flagged { border-color: var(--amber-500); }
+.at-nav__btn--flagged.at-nav__btn--answered { background: var(--amber-500); border-color: var(--amber-500); }
+
+.at-nav__legend { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+.at-nav__legend span {
+  display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--text-tertiary);
+}
+
+/* Question */
+.at-question { flex: 1; padding: 32px; max-width: 800px; margin: 0 auto; width: 100%; }
+.at-question__header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;
+}
+.at-question__num { font-size: 13px; font-weight: 600; color: var(--text-tertiary); }
+.at-question__actions { display: flex; gap: 8px; align-items: center; }
+.at-question__text { font-size: 20px; font-weight: 700; color: var(--text-primary); line-height: 1.5; margin-bottom: 24px; }
+
+.at-options { display: flex; flex-direction: column; gap: 10px; }
+.at-options--tf { flex-direction: row; }
+.at-options--tf .cl-quiz-option { flex: 1; justify-content: center; gap: 8px; }
+
+.at-question__nav {
+  display: flex; justify-content: space-between; margin-top: 32px;
+  padding-top: 20px; border-top: 1px solid var(--border-secondary);
+}
+
+/* Modal */
+.at-modal-overlay {
+  position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5);
+  display: flex; align-items: center; justify-content: center; z-index: 300;
+}
+.at-modal {
+  background: var(--bg-card); border-radius: var(--radius-xl);
+  padding: 32px; max-width: 440px; width: 90%;
+  box-shadow: var(--shadow-xl);
+}
+.at-modal h3 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+.at-modal p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+.at-modal__warning {
+  display: flex; align-items: center; gap: 8px; color: var(--amber-500);
+  font-weight: 600; margin-top: 12px;
+}
+.at-modal__actions { display: flex; gap: 10px; margin-top: 20px; }
+
+@media (max-width: 768px) {
+  .at-nav { display: none; }
+  .at-question { padding: 20px; }
+  .at-topbar { padding: 12px 16px; }
+  .at-options--tf { flex-direction: column; }
+}

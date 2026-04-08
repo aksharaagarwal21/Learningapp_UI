@@ -1,0 +1,236 @@
+.practice-page {
+  max-width: 1100px;
+}
+
+.practice-page__header {
+  margin-bottom: 28px;
+}
+
+.practice-page__header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.practice-page__header p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Daily Challenge */
+.daily-challenge {
+  background: var(--bg-card);
+  border: 2px solid rgba(245, 158, 11, 0.2);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.daily-challenge__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.daily-challenge__badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--amber-500);
+}
+
+.daily-challenge__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.daily-challenge__info h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.daily-challenge__info p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.daily-challenge__meta {
+  display: flex;
+  gap: 16px;
+}
+
+.daily-challenge__meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+/* Topics Grid */
+.practice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.practice-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.practice-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.practice-topic-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.practice-topic-card:hover {
+  border-color: var(--border-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.practice-topic-card__icon {
+  font-size: 24px;
+}
+
+.practice-topic-card__info {
+  flex: 1;
+}
+
+.practice-topic-card__info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.practice-topic-card__info span {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.practice-topic-card__bar {
+  width: 60px;
+  height: 4px;
+  background: var(--bg-tertiary);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.practice-topic-card__bar-fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.practice-topic-card__arrow {
+  color: var(--text-tertiary);
+}
+
+/* Recent Problems */
+.practice-problems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.practice-problem-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-md);
+}
+
+.practice-problem-item__status {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.practice-problem-item__status--solved {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--emerald-500);
+}
+
+.practice-problem-item__status--attempted {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--amber-500);
+}
+
+.practice-problem-item__status--unsolved {
+  background: var(--bg-tertiary);
+  color: var(--text-tertiary);
+}
+
+.practice-problem-item__info {
+  flex: 1;
+}
+
+.practice-problem-item__title {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.practice-problem-item__topic {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.sa-card__difficulty--easy {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--emerald-500);
+}
+
+.sa-card__difficulty--medium {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--amber-600);
+}
+
+.sa-card__difficulty--hard {
+  background: rgba(244, 63, 94, 0.1);
+  color: var(--rose-500);
+}
+
+@media (max-width: 768px) {
+  .daily-challenge__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+}

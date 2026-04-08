@@ -1,0 +1,60 @@
+.results-page { max-width: 800px; margin: 0 auto; }
+
+.results-hero {
+  text-align: center; padding: 40px; border-radius: var(--radius-xl);
+  margin-bottom: 24px;
+}
+.results-hero--pass { background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(99, 102, 241, 0.05)); border: 2px solid rgba(16, 185, 129, 0.15); }
+.results-hero--fail { background: linear-gradient(135deg, rgba(244, 63, 94, 0.08), rgba(245, 158, 11, 0.05)); border: 2px solid rgba(244, 63, 94, 0.15); }
+
+.results-hero__icon { font-size: 48px; margin-bottom: 16px; color: var(--emerald-500); }
+.results-hero--fail .results-hero__icon { color: var(--rose-500); font-size: 48px; }
+.results-hero h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+.results-hero p { font-size: 15px; color: var(--text-secondary); }
+
+/* Score Card */
+.results-score-card {
+  display: flex; align-items: center; gap: 32px; margin-bottom: 24px;
+}
+.results-score-card__details {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1;
+}
+.results-score-card__stat strong {
+  display: block; font-size: 24px; font-weight: 800; color: var(--text-primary);
+}
+.results-score-card__stat span { font-size: 12px; color: var(--text-tertiary); }
+
+/* Review */
+.results-review h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.results-review { margin-bottom: 24px; }
+.results-review__list { display: flex; flex-direction: column; gap: 8px; }
+
+.results-review__item {
+  padding: 14px 16px; border-radius: var(--radius-md);
+  border-left: 4px solid;
+}
+.results-review__item--correct { border-color: var(--emerald-500); background: rgba(16, 185, 129, 0.03); }
+.results-review__item--wrong { border-color: var(--rose-500); background: rgba(244, 63, 94, 0.03); }
+
+.results-review__item-header { display: flex; align-items: center; gap: 10px; }
+.results-review__item-icon { flex-shrink: 0; }
+.results-review__item--correct .results-review__item-icon { color: var(--emerald-500); }
+.results-review__item--wrong .results-review__item-icon { color: var(--rose-500); }
+.results-review__item-num { font-weight: 700; font-size: 13px; color: var(--text-tertiary); }
+.results-review__item-text { flex: 1; font-size: 14px; font-weight: 500; color: var(--text-primary); }
+.results-review__item-pts { font-size: 13px; font-weight: 700; }
+.results-review__item--correct .results-review__item-pts { color: var(--emerald-500); }
+.results-review__item--wrong .results-review__item-pts { color: var(--text-tertiary); }
+
+.results-review__item-explanation {
+  margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border-secondary);
+  font-size: 13px; color: var(--text-secondary); line-height: 1.6;
+}
+
+/* Actions */
+.results-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 768px) {
+  .results-score-card { flex-direction: column; text-align: center; }
+  .results-score-card__details { grid-template-columns: 1fr 1fr; }
+}

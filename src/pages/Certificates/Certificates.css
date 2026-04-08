@@ -1,0 +1,137 @@
+/* Certificates */
+.certificates-page {
+  max-width: 1200px;
+}
+
+.certificates-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.certificates-page__header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.certificates-page__header p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.cert-card:hover {
+  border-color: var(--border-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.cert-card__preview {
+  padding: 24px;
+  background: var(--gradient-card);
+}
+
+.cert-card__preview-inner {
+  background: var(--bg-primary);
+  border: 2px solid;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+}
+
+.cert-card__crest {
+  margin-bottom: 8px;
+}
+
+.cert-card__preview-inner h4 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.cert-card__preview-skill {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.cert-card__preview-score span {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.cert-card__preview-name {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 8px 0;
+}
+
+.cert-card__preview-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+}
+
+.cert-card__preview-icon {
+  font-size: 16px;
+}
+
+.cert-card__info {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-card__info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.cert-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.cert-card__actions {
+  display: flex;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .certificates-page__header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}

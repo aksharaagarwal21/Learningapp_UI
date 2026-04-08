@@ -1,0 +1,33 @@
+.recruiter-dash {
+  max-width: 1200px;
+}
+
+.recruiter-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recruiter-activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-secondary);
+}
+
+.recruiter-activity-item__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.recruiter-activity-item__time {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}

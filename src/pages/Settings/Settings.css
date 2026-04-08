@@ -1,0 +1,50 @@
+.settings-page { max-width: 700px; }
+.settings-page h1 { font-size: 26px; font-weight: 800; margin-bottom: 4px; }
+.settings-page__subtitle { font-size: 14px; color: var(--text-secondary); margin-bottom: 28px; }
+
+.settings-section { margin-bottom: 20px; }
+.settings-section h2 {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 16px; font-weight: 700; margin-bottom: 16px;
+  padding-bottom: 12px; border-bottom: 1px solid var(--border-secondary);
+}
+
+.settings-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0; border-bottom: 1px solid var(--border-secondary);
+  gap: 16px;
+}
+.settings-row:last-child { border-bottom: none; }
+.settings-row__info { flex: 1; }
+.settings-row__info h4 { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+.settings-row__info p { font-size: 13px; color: var(--text-tertiary); margin-top: 2px; }
+
+/* Toggle Switch */
+.settings-toggle {
+  width: 48px; height: 26px; border-radius: 13px;
+  background: var(--bg-tertiary); border: 2px solid var(--border-primary);
+  position: relative; cursor: pointer; transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+.settings-toggle--on { background: var(--indigo-500); border-color: var(--indigo-500); }
+.settings-toggle__knob {
+  width: 18px; height: 18px; border-radius: 50%; background: #fff;
+  position: absolute; top: 2px; left: 2px; transition: left var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.settings-toggle--on .settings-toggle__knob { left: 24px; }
+
+/* Theme Picker */
+.settings-theme-picker { display: flex; gap: 6px; }
+.settings-theme-btn {
+  display: flex; align-items: center; gap: 6px; padding: 8px 16px;
+  border-radius: var(--radius-md); font-size: 13px; font-weight: 600;
+  border: 2px solid var(--border-secondary); background: var(--bg-card);
+  color: var(--text-secondary); cursor: pointer; transition: all var(--transition-fast);
+}
+.settings-theme-btn--active {
+  border-color: var(--indigo-500); color: var(--indigo-500);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.settings-row--danger .settings-row__info h4 { color: var(--rose-500); }

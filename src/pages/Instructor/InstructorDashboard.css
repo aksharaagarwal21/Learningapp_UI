@@ -1,0 +1,92 @@
+.instructor-dash {
+  max-width: 1200px;
+}
+
+.instructor-assessments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instructor-assessment-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-secondary);
+  transition: all var(--transition-fast);
+}
+
+.instructor-assessment-item:hover {
+  border-color: var(--border-primary);
+  background: var(--bg-secondary);
+}
+
+.instructor-assessment-item__icon {
+  font-size: 28px;
+}
+
+.instructor-assessment-item__content {
+  flex: 1;
+}
+
+.instructor-assessment-item__title {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.instructor-assessment-item__meta {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.instructor-assessment-item__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--amber-500);
+}
+
+.instructor-feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.instructor-feedback-card {
+  padding: 20px;
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+}
+
+.instructor-feedback-card__stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.instructor-feedback-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.instructor-feedback-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .instructor-feedback-grid {
+    grid-template-columns: 1fr;
+  }
+}

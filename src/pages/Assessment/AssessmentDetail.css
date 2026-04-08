@@ -1,0 +1,57 @@
+.assessment-detail { max-width: 1100px; }
+
+.ad-grid { display: grid; grid-template-columns: 1fr 340px; gap: 24px; }
+.ad-main { display: flex; flex-direction: column; gap: 20px; }
+
+/* Hero */
+.ad-hero {
+  text-align: center; padding: 40px; border-radius: var(--radius-xl);
+  background: var(--bg-card); border: 1px solid var(--border-secondary);
+}
+.ad-hero__icon { font-size: 56px; display: block; margin-bottom: 16px; }
+.ad-hero h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+.ad-hero p { font-size: 15px; color: var(--text-secondary); max-width: 500px; margin: 0 auto; line-height: 1.6; }
+
+/* Rules */
+.ad-rules h2 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.ad-rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ad-rule { display: flex; gap: 14px; align-items: flex-start; }
+.ad-rule h4 { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+.ad-rule p { font-size: 13px; color: var(--text-secondary); }
+
+/* Topics */
+.ad-topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.ad-topic {
+  padding: 6px 14px; border-radius: var(--radius-full); font-size: 13px;
+  font-weight: 500; background: var(--bg-secondary); color: var(--text-secondary);
+  border: 1px solid var(--border-secondary);
+}
+
+/* Start Card */
+.ad-start-card { position: sticky; top: 80px; }
+.ad-start-card__header { text-align: center; margin-bottom: 16px; }
+.ad-start-card__icon { font-size: 48px; display: block; margin-bottom: 8px; }
+.ad-start-card__header h3 { font-size: 18px; font-weight: 700; }
+.ad-start-card__stats {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;
+  padding: 16px 0; border-top: 1px solid var(--border-secondary);
+  border-bottom: 1px solid var(--border-secondary);
+  margin-bottom: 14px; text-align: center;
+}
+.ad-start-card__stats div strong { display: block; font-size: 16px; font-weight: 800; color: var(--text-primary); }
+.ad-start-card__stats div span { font-size: 11px; color: var(--text-tertiary); }
+.ad-start-card__diff { display: flex; gap: 8px; justify-content: center; align-items: center; }
+.ad-start-card__note {
+  display: flex; align-items: center; gap: 6px; justify-content: center;
+  margin-top: 12px; font-size: 12px; color: var(--text-tertiary);
+}
+
+.ad-sidebar { position: relative; }
+
+@media (max-width: 1024px) {
+  .ad-grid { grid-template-columns: 1fr; }
+  .ad-start-card { position: static; }
+}
+@media (max-width: 768px) {
+  .ad-rules-grid { grid-template-columns: 1fr; }
+}
